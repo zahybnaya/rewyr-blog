@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16A34A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#65A30D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4D7C0F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F2FE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Growth visualization with connecting lines -->
+  <g transform="translate(50,250)">
+    <!-- Plant 1 -->
+    <circle cx="0" cy="0" r="3" fill="#8B4513"/>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="url(#stemGradient)" stroke-width="2"/>
+    <ellipse cx="0" cy="-40" rx="8" ry="15" fill="url(#leafGradient)"/>
+    
+    <!-- Plant 2 -->
+    <circle cx="80" cy="0" r="3" fill="#8B4513"/>
+    <line x1="80" y1="0" x2="80" y2="-50" stroke="url(#stemGradient)" stroke-width="3"/>
+    <ellipse cx="80" cy="-60" rx="12" ry="20" fill="url(#leafGradient)"/>
+    <ellipse cx="70" cy="-40" rx="8" ry="12" fill="url(#leafGradient)"/>
+    
+    <!-- Plant 3 -->
+    <circle cx="160" cy="0" r="3" fill="#8B4513"/>
+    <line x1="160" y1="0" x2="160" y2="-70" stroke="url(#stemGradient)" stroke-width="4"/>
+    <ellipse cx="160" cy="-80" rx="15" ry="25" fill="url(#leafGradient)"/>
+    <ellipse cx="145" cy="-60" rx="10" ry="15" fill="url(#leafGradient)"/>
+    <ellipse cx="175" cy="-50" rx="8" ry="12" fill="url(#leafGradient)"/>
+    
+    <!-- Plant 4 -->
+    <circle cx="240" cy="0" r="3" fill="#8B4513"/>
+    <line x1="240" y1="0" x2="240" y2="-90" stroke="url(#stemGradient)" stroke-width="5"/>
+    <ellipse cx="240" cy="-100" rx="18" ry="30" fill="url(#leafGradient)"/>
+    <ellipse cx="220" cy="-80" rx="12" ry="18" fill="url(#leafGradient)"/>
+    <ellipse cx="260" cy="-70" rx="10" ry="15" fill="url(#leafGradient)"/>
+    <ellipse cx="230" cy="-50" rx="8" ry="12" fill="url(#leafGradient)"/>
+    
+    <!-- Growth connection lines -->
+    <path d="M 0 -20 Q 40 -35 80 -30" stroke="#3B82F6" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 80 -35 Q 120 -50 160 -45" stroke="#3B82F6" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M 160 -50 Q 200 -65 240 -60" stroke="#3B82F6" stroke-width="1" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1E40AF">Growth & Development</text>
+  
+  <!-- Subtle circuit elements -->
+  <circle cx="320" cy="60" r="2" fill="#3B82F6" opacity="0.3"/>
+  <circle cx="350" cy="80" r="1.5" fill="#3B82F6" opacity="0.3"/>
+  <line x1="320" y1="60" x2="350" y2="80" stroke="#3B82F6" stroke-width="0.5" opacity="0.2"/>
+</svg> 
