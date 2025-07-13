@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import RewyrLogo from '../assets/rewyr_logo_small.png';
+import TinkeringImage from '../assets/tinkering.png';
 ---
 
 <Layout
@@ -10,18 +11,26 @@ import RewyrLogo from '../assets/rewyr_logo_small.png';
 	heroImage={RewyrLogo}
 >
 	<p>
-		The heart of Rewyr lies in its <strong>Rewire Agents</strong> - specialized improvement agents that focus on specific 
-		aspects of LLM optimization such as prompt enhancement, temperature adjustment, model selection, 
-		and context management. These agents work together to provide comprehensive optimization recommendations.
+		Rewyr centers on <strong>Rewire Agents</strong> — modular agents that analyze and improve how LLMs are used in your application. 
+		Each agent focuses on a specific area such as prompt design, context management, best practices or model choice.
 	</p>
 
 	<h2>What We Solve</h2>
 	<p>
-		Modern applications often contain dozens or hundreds of LLM interactions scattered throughout their 
-		codebase. Without proper tooling, it's nearly impossible to understand the full picture of your 
-		LLM usage, identify optimization opportunities, or maintain consistency across interactions. 
-		Rewyr solves this by providing:
+		LLM logic is often scattered across a codebase with inconsistent prompts, unclear parameters, and hard-to-track behavior. 
+		This makes it difficult to improve performance, ensure consistency, or scale reliably.
+	</p>
+	<p>
+		Rewyr lets you apply multiple optimization agents across your LLM workflows in one pass. 
+		It turns slow, manual tuning into fast, structured feedback you can act on immediately.
 	</p>
 
 
+	<h2>How Rewyr Helps</h2>
+	<p>
+		Rewyr surfaces inefficiencies and blind spots in your LLM usage and suggests improvements through focused, actionable agents. 
+		It brings structure and clarity to an otherwise opaque layer of system design.
+	</p>
+
+	<img src={TinkeringImage.src} alt="Tinkering" />
 </Layout>
