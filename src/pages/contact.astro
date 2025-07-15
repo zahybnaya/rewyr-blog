@@ -1,0 +1,257 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Contact - Join the Waitlist" description="Get in touch with the Rewyr team and join our waitlist for early access to powerful LLM optimization tools." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Get in Touch</h1>
+			<p>
+				Ready to optimize your AI workflows? Join our waitlist to be among the first to experience 
+				the power of Rewyr's intelligent LLM optimization tools.
+			</p>
+			
+			<div class="contact-content">
+				<div class="contact-form">
+					<h2>Join the Waitlist</h2>
+
+					<form action="https://script.google.com/macros/s/AKfycbwBu4OjsR8SDCU_6rATjlSghw1cIfiBYEaZyaEserhqsX8d5TPeWf4rV5SV8c-atizM/exec" method="POST" class="waitlist-form" id="waitlist-form">
+					
+					
+						<div class="form-group">
+							<label for="name">Full Name *</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">Email Address *</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="company">Company/Organization</label>
+							<input type="text" id="company" name="company">
+						</div>
+						
+						<div class="form-group">
+							<label for="role">Role/Title</label>
+							<input type="text" id="role" name="role" placeholder="e.g., Software Engineer, CTO, etc.">
+						</div>
+						
+						<div class="form-group">
+							<label for="use-case">Primary Use Case</label>
+							<select id="use-case" name="use-case">
+								<option value="">Select your primary use case</option>
+								<option value="chatbot">Chatbot/Conversational AI</option>
+								<option value="content-generation">Content Generation</option>
+								<option value="code-assistance">Code Assistance/Generation</option>
+								<option value="data-analysis">Data Analysis & Processing</option>
+								<option value="automation">Workflow Automation</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<label for="message">Additional Information</label>
+							<textarea id="message" name="message" rows="4" placeholder="Tell us about your current LLM usage, challenges you're facing, or any specific questions..."></textarea>
+						</div>
+						
+						<div class="form-group checkbox-group">
+							<label class="checkbox-label">
+								<input type="checkbox" name="newsletter" value="yes">
+								<span class="checkmark"></span>
+								Subscribe to our newsletter for updates and insights
+							</label>
+						</div>
+						
+						<button type="submit" class="submit-btn">Join Waitlist</button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="contact-alternatives">
+				<h2>Other Ways to Connect</h2>
+				<div class="contact-methods">
+					<div class="contact-method">
+						<h3>X (Twitter)</h3>
+						<p>Follow us for the latest updates and AI development insights.</p>
+						<a href="https://x.com/contactrewyr" target="_blank" class="contact-link">Follow on X</a>
+					</div>
+					
+					<div class="contact-method">
+						<h3>PyPI</h3>
+						<p>Install Rewyr and start optimizing your LLM applications today.</p>
+						<a href="https://pypi.org/project/rewyr/" target="_blank" class="contact-link">Install from PyPI</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.contact-content {
+		display: flex;
+		justify-content: center;
+		margin: 2rem 0;
+	}
+	
+	.contact-form {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow);
+		width: 100%;
+		max-width: 600px;
+	}
+	
+	.form-group {
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.form-group label {
+		display: block;
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+		color: rgb(var(--black));
+		font-size: 0.95rem;
+	}
+	
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		width: 100%;
+		padding: 1rem;
+		border: 2px solid rgb(var(--gray-light));
+		border-radius: 8px;
+		font-family: inherit;
+		font-size: 16px;
+		transition: border-color 0.2s ease;
+		box-sizing: border-box;
+	}
+	
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--accent);
+	}
+	
+	.checkbox-group {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		margin-bottom: 2rem;
+	}
+	
+	.checkbox-label {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		font-weight: normal;
+		cursor: pointer;
+		font-size: 0.95rem;
+		line-height: 1.4;
+	}
+	
+	.checkbox-label input[type="checkbox"] {
+		width: auto;
+		margin-top: 0.25rem;
+		flex-shrink: 0;
+	}
+	
+	.submit-btn {
+		background: var(--accent);
+		color: white;
+		border: none;
+		padding: 1.25rem 2rem;
+		border-radius: 8px;
+		font-size: 1.1rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background-color 0.2s ease;
+		width: 100%;
+		margin-top: 1rem;
+	}
+	
+	.submit-btn:hover {
+		background: var(--accent-dark);
+		text-decoration: none;
+	}
+	
+	.contact-alternatives {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgb(var(--gray-light));
+	}
+	
+	.contact-methods {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	
+	.contact-method {
+		background: white;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(var(--gray), 10%);
+	}
+	
+	.contact-method h3 {
+		margin-bottom: 0.5rem;
+		color: var(--accent);
+	}
+	
+	.contact-method p {
+		margin-bottom: 1rem;
+		font-size: 0.95rem;
+	}
+	
+	.contact-link {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		background: var(--accent);
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+		font-size: 0.9rem;
+		font-weight: 600;
+		transition: background-color 0.2s ease;
+	}
+	
+	.contact-link:hover {
+		background: var(--accent-dark);
+		text-decoration: none;
+	}
+	
+	@media (max-width: 720px) {
+		.contact-content {
+			padding: 0 1rem;
+		}
+		
+		.contact-form {
+			padding: 2rem;
+		}
+		
+		.form-group {
+			margin-bottom: 1.5rem;
+		}
+		
+		.contact-methods {
+			grid-template-columns: 1fr;
+		}
+	}
+</style> 

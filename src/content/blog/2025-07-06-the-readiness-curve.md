@@ -81,18 +81,14 @@ The model that works in development is too slow or costly for production. Optimi
 **Regulatory Compliance**
 As LLM applications enter regulated industries, they face scrutiny that rapid prototyping tools aren't designed to handle. Explainability, bias detection, and compliance become insurmountable hurdles.
 
-## Breaking Through: The Rewyr Approach
+## Breaking Through: What We're Building with Rewyr
+Rewyr is our response to the painful gap between LLM demos and real-world deployment.
 
-We built Rewyr specifically because we've lived through this pain. We've been stuck in the mud, questioning our sanity, wondering if we'd ever ship something that actually works.
+It’s a system design tool for teams serious about production-grade AI—built to surface failure points, guide optimization, and accelerate the path through the plateau.
 
-Rewyr intends to make the mud lighter, smoother, and less dense so you can move faster through the plateau of despair.
+We’re still building it. But if you're wrestling with the same challenges, we want to hear from you.
 
-Rewyr accelerates your journey from prototype to production by:
-
-- **Providing visibility** into LLM usage patterns across your entire application
-- **Identifying optimization opportunities** that aren't apparent during development
-- **Enabling systematic improvement** through data-driven analysis
-- **Facilitating the last mile** with tools designed for production challenges
+→ [Get early access / Join the waitlist](/contact)
 
 ## Surviving the Plateau
 
